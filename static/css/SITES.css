@@ -1,0 +1,362 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(240, 238, 238);
+    overflow-x: hidden;
+    scroll-behavior: smooth ;
+    margin: 0;
+}
+/*header*/
+.header{
+    position:fixed;
+    flex-wrap:wrap;
+  justify-content: space-between;
+    display: flex;
+    color: rgb(0, 0, 121);
+    height: 50px;
+    width: 100%;
+    margin-top: 0;
+    background-color: gray;
+}
+.header h1{
+    margin: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header img{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.menu{
+    display: flex;
+}
+.menu ul{
+    list-style-type: none;
+    display: flex;
+
+}
+.menu li{
+    text-decoration: none;
+}
+.menu a{
+    text-decoration: none;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.btn{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 121);
+    color: white;
+}
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 3px 3px 1px #1e1e1f;
+    transition: all 1s;
+}
+/*main*/
+
+.main{
+    overflow: hidden;
+}
+
+
+.TT{
+    position: relative;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin: 50px 150px;
+}
+.TTimg{
+    position: absolute;
+    left: -50px;
+    top: 100px;
+}
+.TTimg img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.search{
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.search> input[type="text"]{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.contact{
+    position: fixed;
+    right: 10px;
+    top: 500px;
+}
+.contact img{
+    width: 60px;
+    height: 60px;
+}
+
+.slideimage{
+    display: none;
+}
+
+.slideshow img{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.slideimage{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(224, 222, 222);
+    width: 450px;
+    padding: 10px;
+}
+.images{
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 30px;
+    display: grid;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+.img1 img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    z-index: 0;
+}
+.images p{
+    margin: 0;
+}
+.details h4{
+    margin: 10px;
+}
+
+.yes{
+    display: none;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+.ton{
+    display: inline;
+    color: blue;
+    border: none;
+}
+.lightbox{
+    top: -100%;
+    transition-duration: 1s;
+    display: table;
+    position: fixed;
+    
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.lightbox:target{
+    top: 0;
+    /*opacity: 1;
+    z-index: 1;*/
+}
+.lightbox-content{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+}
+
+.lightbox-content img{
+    width: 500px;
+    height: auto;
+}
+
+footer{
+    background-color: gray;
+    width: 100%;
+    height: auto;
+}
+.footer-body{
+    display: flex;
+    gap: 40px;
+}
+.footer-body .brand{
+    width: 150px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.links{
+    margin-top: 20px;
+}
+.links ul{
+    list-style-type: none;
+
+}
+.links li{
+    margin: 5px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+}
+.follow p{
+    text-align: center;
+    color: white;
+}
+
+.follow img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.follow ul{
+    list-style-type:none;
+}
+.follow li{
+    color: white;
+    margin: 5px;
+}
+
+@media only screen and (max-width:600px) {
+    /*header*/
+    body{
+        overflow-x: hidden;
+        position: relative;
+    }
+    .header{
+        height: 65px;
+        top: 0;
+    }
+    .header h1{
+        font-size: 30px;
+    }
+    .header img{
+        position: absolute;
+        top: 65px;
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+    .header .menu img{
+        position: absolute;
+        top: 2px;
+        left: 165px;
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        width: 200px;
+        top: 65px;
+        background-color:grey;
+        color: white;
+        height: 90vh;
+        display: block;
+        left: -200px;
+        transition: all 1s;
+    }
+    .menu ul{
+        display: block;
+        
+    }
+    .menu li{
+        padding: 10px;
+    }
+    .menu a{
+        color: white;
+    }
+    
+    /*main*/
+    .main{
+        margin-top: 50px;
+    }
+    .images{
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+        grid-gap: 10px;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .img1 img{
+        width: 170px;
+        height: 170px;
+        margin-bottom: 2px;
+        border-radius: 5px;
+    }
+    .img1{
+        margin:5px auto;
+    }
+
+    .details{
+        font-size: 20px;
+    }
+    .contact{
+        right: 5px;
+        top: 800px;
+    }
+    .contact img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .TT{
+    font-size: 1.4rem;
+    padding: 5px;
+    
+}
+
+    .footer-body{
+        height: 200px;
+        gap: 6px;
+        
+    }
+    .footer-body .brand{
+        width: 100px;
+        font-size: 1rem;
+    }
+    .links{
+        width: 70px;
+        margin-top: 5px;
+    }
+    
+    .follow img{
+        width: 15px;
+        height: 15px;
+        margin-right: 3px;
+    }
+    .follow ul{
+        margin-left: 5px;
+    }
+    .links ul{
+        padding-left: 0;
+    }
+    
+}

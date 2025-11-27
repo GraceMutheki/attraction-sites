@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+}
+.container h5{
+    margin: 10px;
+    margin-left: 100px;
+}
+.btn{
+    margin-top: 60px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 80%;
+}
+
+.btn img{
+    width: 30px;
+    height:30px;
+    margin-left: 5px;
+}
+.btn:hover{
+    border-radius: 15px;
+    transform: scale(1.1);
+    box-shadow: 10px 5px 5px 3px #1e1e1f;
+    transition:all 0.3s;
+}
+.form{
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+    /*background-color: rgba(1, 1, 54, 0.863);*/
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+}
+.formc {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /*margin: auto;*/
+    background-image: linear-gradient(rgba(0, 255, 0, 0.0), rgb(0, 119, 255));
+}
+
+.input-cnt{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.input-cnt:last-child{
+    margin-bottom: 0px;
+}
+
+.input-cnt > i{
+    min-width: 40px;
+    padding: 10px;
+    text-align: center;
+    background-color: lightgrey;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: #0076ff;
+}
+.input-cnt:hover > i{
+    background-color: #0076ff;
+    color: white;
+}
+
+.input-cnt > input[type="text"], input[type="password"], .input-cnt > textarea{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    width: 100%;
+}
+
+.textarea-icon{
+    padding: 60px 10px !important;
+}
+
+.input-cnt > input[type="submit"] {
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 75%;
+    margin: 0px auto;
+    font-size: 105%;
+    padding: 8px;
+    color: #0076ff;
+    background-color: white;
+    transition-duration: .5s;
+}
+
+.input-cnt > input[type="submit"]:hover {
+    color: white;
+    background: #0076ff;
+}
+
+@media only screen and (max-width:600px) {
+    .form{
+    margin-top: 50px;
+    width: 90%;
+    padding: 5px;
+    /*background-color: rgba(1, 1, 54, 0.863);*/
+    }
+   .formc h2{
+    margin-top: 50px;
+   }
+}

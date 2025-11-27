@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>TRAVELLERS TOURS</h1><img src="{{url_for('static',filename='images/menu.png')}}" onclick="opensidebar()">
+        <div class="menu" id="menu-items">
+            <img src="{{url_for('static',filename='images/cancel.png')}}" onclick="closesidebar()">
+             <ul id="list-items">
+                     <li><a href="/">HOME</a></li>
+                         <li><a href="/SITES">SITES</a></li>
+                         <li><a href="/contact">CONTACTS</a></li>
+                         <li><a href="/general">GENERAL</a></li>
+                         <li><a href="/signup"><button class="btn">SIGN UP</button></a></li>
+             </ul>
+        </div>
+    </div>
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <div class="form2">
+        <form action="#">
+            <div class="input-cnt">
+                <i class="material-icons">person</i>
+                <input type="text" placeholder="Name" name="name">
+            </div>
+
+
+            <div class="input-cnt">
+                <i class="material-icons">email</i>
+                <input type="text" name="email" id="" placeholder="Email" required>
+            </div>
+
+            <div class="input-cnt">
+                <i class="material-icons textarea icon">messages</i>
+                <textarea placeholder="Your message here....." name="message" cols="20" rows="6" id=""></textarea>
+            </div>
+
+            <div class="input-cnt">
+                <input type="submit">
+            </div>
+        </form>
+        </div>
+    </div>
+       <script>
+         function opensidebar(){
+        const elem = document.getElementById("menu-items");
+        
+            elem.style.left="0";
+        }
+        function closesidebar(){
+        const elem = document.getElementById("menu-items");
+        
+            elem.style.left="-200px";
+        }
+       </script> 
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SIGN UP</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+    </head>
+    <body>
+      <div class="formc">
+                        <h2>SIGN UP</h2>
+                    <div class="form">
+                        <form action="/signup" method="POST">
+                            <div class="input-cnt">
+                                <i class="material-icons">person</i>
+                                <input type="text" placeholder="Name" id="name" name="name">
+                            </div>
+                
+                
+                            <div class="input-cnt">
+                                <i class="material-icons">email</i>
+                                <input type="text" name="email" id="email"   placeholder="Email" required>
+                            </div>
+
+                            <div class="input-cnt">
+                                <i class="material-icons">password</i>
+                                <input type="password" name="password" id="password" placeholder="Password" required>
+                            </div>
+                
+                            
+                
+                            <div class="input-cnt">
+                                <input type="submit">
+                            </div>
+                        </form>
+
+                        <p>Already have an account <a href="/contact">sign in</a></p>
+                        <button class="btn">Continue with facebook <img src="{{url_for('static',filename='images/facebook.png')}}" > </button>
+
+                    </div>
+                </div>
+    </body>
+    </html>

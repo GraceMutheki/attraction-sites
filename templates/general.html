@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static' ,filename='css/general.css')}}">
+</head>
+<body>
+    <div class="header">
+              <h1>TRAVELLERS TOURS</h1><img src="{{url_for('static', filename='images/menu.png')}}" onclick="opensidebar()">
+                  <div class="menu" id="menu-items">
+                      <img src="{{url_for('static', filename='images/cancel.png')}}"  onclick="closesidebar()">
+                  
+                      <ul id="list-items">
+                          <li><a href="/">HOME</a></li>
+                               <li><a href="/SITES">SITES</a></li>
+                               <li><a href="/contact">CONTACTS</a></li>
+                               <li><a href="/general">GENERAL</a></li>
+                               <li><a href="/signup"><button class="btn">SIGN UP</button></a></li>
+                      </ul>
+                  </div>
+            </div>
+
+    
+    <div class="world">
+    <div class="africa">
+        <h2>AFRICA</h2>
+        <img src="{{url_for('static' ,filename='images/mt.kilimanjaro.jpg')}}">
+        <p class="s-africa">
+            <img src="{{url_for('static' ,filename='images/pyramid of giza-egypt.jpg')}}" id="img1">
+            <img src="{{url_for('static' ,filename='images2/sahara.jpg')}}" id="img2">
+            <img src="{{url_for('static' ,filename='images2/zebras.jpg')}}" id="img3">    
+            <a href="/SITES">➡</a>
+        </p>
+    </div>
+    <div class="asia">
+        <h2>ASIA</h2>
+        <img src="{{url_for('static' ,filename='images/burj khalifa-dubai.jpg')}}">
+        <p class="s-africa">
+            <img src="{{url_for('static' ,filename='images/great wall-beijing.jpg')}}" id="img1">
+            <img src="{{url_for('static' ,filename='images/burj khalifa-dubai.jpg')}}" id="img2">
+            <img src="{{url_for('static' ,filename='images/garden bt the bay-singapore.jpg')}}" id="img3">    
+            <a href="/SITES">➡</a>
+        </p>
+    </div>
+    <div class="europe">
+        <h2>EUROPE</h2>
+        <img src="{{url_for('static' ,filename='images/eiffle tower-france.jpg')}}">
+        <p class="s-africa">
+            <img src="{{url_for('static' ,filename='images/colosseum_rome.jpg')}}" id="img1">
+            <img src="{{url_for('static' ,filename='images/eiffle tower-france.jpg')}}" id="img2">
+            <img src="{{url_for('static' ,filename='images/chichen itza.jpg')}}" id="img3">    
+            <a href="/SITES">➡</a>
+        </p>
+    </div>
+    </div>
+
+    
+    
+</body>
+</html>

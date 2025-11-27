@@ -1,0 +1,106 @@
+body{
+    box-sizing: border-box;
+}
+.header{
+    position:fixed;
+    flex-wrap:wrap;
+  justify-content: space-between;
+    display: flex;
+    color: rgb(0, 0, 121);
+    height: 50px;
+    width: 100%;
+    margin-top: 0;
+    background-color: gray;
+}
+.header h1{
+    margin: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header img{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.menu{
+    display: flex;
+}
+.menu ul{
+    list-style-type: none;
+    display: flex;
+
+}
+.menu li{
+    text-decoration: none;
+}
+.menu a{
+    text-decoration: none;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.btn{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 121);
+    color: white;
+}
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 3px 3px 1px #1e1e1f;
+    transition: all 1s;
+}
+
+
+.world{
+    display: flex;
+    justify-content: space-between;
+    margin:0 100px;
+}
+.world a{
+    text-decoration: none;
+}
+.africa{
+    margin-top: 80px;
+}
+.asia{
+    margin-top: 80px;
+}
+.europe{
+    margin-top: 80px;
+}
+
+.africa img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+.asia img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+.europe img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+.s-africa{
+    position: relative;
+
+}
+.s-africa img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+}
+#img2{
+    left: 20px;
+}
+#img3{
+    left: 40px;
+}
+.s-africa a{
+    position: absolute;
+    left: 100px;
+}
